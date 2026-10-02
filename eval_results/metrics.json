@@ -1,0 +1,45 @@
+{
+  "checkpoint": "checkpoints/20000_nets.ckpt",
+  "data_dir": "./stargan-v2/data/afhq/val",
+  "target_domains": [
+    "cat",
+    "dog",
+    "wild"
+  ],
+  "per_domain": [
+    {
+      "domain": "cat",
+      "domain_index": 0,
+      "psnr_cycle": 15.496936798095703,
+      "ssim_cycle": 0.3647191822528839,
+      "lpips_diversity": 0.4476314187049866,
+      "num_fake": 1000,
+      "fid": 24.373881104495915
+    },
+    {
+      "domain": "dog",
+      "domain_index": 1,
+      "psnr_cycle": 16.003475189208984,
+      "ssim_cycle": 0.3664996325969696,
+      "lpips_diversity": 0.4568594992160797,
+      "num_fake": 1000,
+      "fid": 73.56811056442973
+    },
+    {
+      "domain": "wild",
+      "domain_index": 2,
+      "psnr_cycle": 16.19443130493164,
+      "ssim_cycle": 0.41951629519462585,
+      "lpips_diversity": 0.3765467405319214,
+      "num_fake": 1000,
+      "fid": 73.81792350358796
+    }
+  ],
+  "overall": {
+    "fid": 44.11023369166432,
+    "lpips_diversity": 0.42701255281766254,
+    "psnr_cycle": 15.89828109741211,
+    "ssim_cycle": 0.3835783700148265,
+    "num_fake": 3000
+  }
+}
